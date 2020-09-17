@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    
+}
+
+.social {
+	position: fixed; /* Hacemos que la posicion en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 300px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 20px 25px;
+		text-decoration: none;
+		border-radius: 50px;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transicion a todas las propiedades */
+	}
+ 
+	.social ul li .icon-facebook2 {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-instagram {background:#E1306C;}
+	.social ul li .icon-whatsapp {background:#25d366;}
+	
+ 
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 20px 40px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+@media (max-width: 767px){
+.social {
+  position: fixed; /* Hacemos que la posicion en pantalla sea fija para que siempre se muestre en pantalla*/
+  left: -30px; /* Establecemos la barra en la izquierda */
+  top: 250px; /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+  .social ul {
+    list-style: none;
+  }
+ 
+  .social ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #000;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; /* Establecemos una transicion a todas las propiedades */
+  }
+ 
+  .social ul li .icon-facebook2 {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+  .social ul li .icon-instagram {background:#E1306C;}
+  .social ul li .icon-whatsapp {background:#25d366;}
+  
+ 
+  .social ul li a:hover {
+    background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 15px 25px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  }
+	}
+.citas {
+  position: fixed; /* Hacemos que la posicion en pantalla sea fija para que siempre se muestre en pantalla*/
+  right: 0; /* Establecemos la barra en la izquierda */
+  top: 0px; /* Bajamos la barra 0px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+  .citas ul {
+    list-style: none;
+  }
+ 
+  .citas ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #0CC07F;
+    padding: 20px 70px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; /* Establecemos una transicion a todas las propiedades */
+  }
+ @media (max-width: 767px){
+ .citas {
+  position: fixed; /* Hacemos que la posicion en pantalla sea fija para que siempre se muestre en pantalla*/
+  right: 0; /* Establecemos la barra en la izquierda */
+  top: 0px; /* Bajamos la barra 0px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+  .citas ul {
+    list-style: none;
+  }
+ 
+  .citas ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #0CC07F;
+    padding: 6px 9px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; /* Establecemos una transicion a todas las propiedades */
+  }}
