@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="google-site-verification" content="xDSxdVuqW-ISPQ7X6OUtyvlypE0vuz9A2pMPdlKE4o8" />
+	<meta charset="utf-8">
+	<title> Cita en linea | Point Implant Clinic</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maxium-scale=1.0, minimun-scale=1.0">
+	<meta name="robots" content="index">
+	<meta name="title" content="Point Implant Clinic">
+	<meta name="keywords" content="Clinica Dental" >
+	
+	<meta name="description" content="Point Implant Clinic||Clinica dental con lo mejor en tecnologia y atención al cliente de mucha calidad || POINT IMPLANT CLINIC. ">
+  <link rel="stylesheet" href="assets/css/main.css"/ type='text/css' media="all" >
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min"></script>
+
+   <!-- input icono-->
+
+  <link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+  <!-- Datepicker-->
+
+  <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="datepicker3/build/jquery.datetimepicker.min.css" rel="stylesheet"/>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo_pointimplant.ico" />
+ 	<link href="https://fonts.googleapis.com/css?family=Abel|Jaldi|Lobster|Oswald|Roboto" rel="stylesheet">
+ 	
+ 	<link rel="stylesheet" href="esyfu/estilos.css">
+ 	<link rel="stylesheet" href="esyfu/fonts.css">
+
+ <!--Captcha-->
+  <script src='https://www.google.com/recaptcha/api.js?render=6LfsBMcZAAAAAGvIa6BigzL0Rkj8wZIygHt8SQ48'></script>
+
+<script>
+    grecaptcha.ready(function() {
+    grecaptcha.execute('6LfsBMcZAAAAAGvIa6BigzL0Rkj8wZIygHt8SQ48', {action: 'formulario'})
+    .then(function(token) {
+    var recaptchaResponse = document.getElementById('recaptchaResponse');
+    recaptchaResponse.value = token;
+    });});
+
+$recaptcha_secret = '6LfsBMcZAAAAAM4dkxkl9D92GrkxPU88lFZYKoUi'; 
+$recaptcha_response = $_POST['recaptcha_response']; 
+$url = 'https://www.google.com/recaptcha/api/siteverify'; 
+
+$data = array( 'secret' => $recaptcha_secret, 'response' => $recaptcha_response, 'remoteip' => $_SERVER['REMOTE_ADDR'] ); 
+$curlConfig = array( CURLOPT_URL => $url, CURLOPT_POST => true, CURLOPT_RETURNTRANSFER => true, CURLOPT_POSTFIELDS => $data ); 
+$ch = curl_init(); 
+curl_setopt_array($ch, $curlConfig); 
+$response = curl_exec($ch); 
+curl_close($ch);
+
+$jsonResponse = json_decode($response);
+if ($jsonResponse->success === true) { 
+    // Código para procesar el formulario
+} else {
+   // Código para aviso de error
+}
+</script>
+
+ 	
+</head>
+
+
+<body style="background: url(img/form/fondo_form_01.jpg); background-size: cover; background-attachment: fixed;" class="img-responsive">
+
+<div>
+	<div style="padding-top:1px;padding-bottom: 10px;background-color: #02B8BF"  class="col-xs-4 col-xs-12"></div>
+	<div style="padding-top:1px;padding-bottom: 10px;background-color: #158ED8"  class="col-xs-4 col-xs-12"></div> 
+	<div style="padding-top:1px;padding-bottom: 10px;background-color: #0CC07F"  class="col-xs-4 col-xs-12"></div> 
+</div>
+
+<div class="citas">
+		<ul>
+			<li><a style="font-size: 14px;"  href="cita_en_linea.html"><span class="icon-calendar"></span> Cita en linea</a></li>
+		</ul>
+</div>
+
+<div class="container-fluid" style="background-color: white">
+	<div class="row">
+
+		<div class="col-sm-5 col-xs-12 text-left" style="padding-top: 10px;padding-bottom: 10px;">
+<article style="color: grey;font-family: 'Jaldi', sans-serif; font-size: 17px;"><span class="icon-clock 1"></span> Lunes a Viernes 9 am. a 8 pm. - Sabados 9 am. a 1 pm.</article>
+		</div>
+
+		<div class="hidden-xs">
+		<div class="col-sm-2 col-xs-12 text-left" style="padding-top: 10px;padding-bottom: 10px;">
+<article style="color: grey;font-family: 'Jaldi', sans-serif; font-size: 17px;"><span class="glyphicon glyphicon-envelope"></span> info@digident.com.pe</article>
+		</div>
+
+<div class="col-sm-5 col-xs-12 text-left" style="padding-top: 10px;padding-bottom: 10px;">
+<article style="color: grey;font-family: 'Jaldi', sans-serif; font-size: 17px;"><span class="icon-phone"></span> +51 (01) 6870870</article>
+		</div>
+
+</div>
+	
+</div>
+</div>
+<style type="text/css">
+	.affix {
+					top: 0;
+          width: 100%;
+			}
+</style>
+
+<nav class="navbar navbar-default"  data-spy="affix" data-offset-top="80" style="z-index: 100;box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.075); background:white;">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="barmenu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand " style="color: white;font-family:'Jaldi', sans-serif; font-size: 30px;" href="index.html"><img src="img/Logo_Pointimplant.png" class="img-responsive"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a style="font-size: 14px;" href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio </a></li>
+    <li class="dropdown">
+          <a style="font-size: 14px;"  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false"><span class="icon-office"></span> Nosotros <span class="glyphicon glyphicon-chevron-down"></span></a>
+          <ul class="dropdown-menu">
+            <li style="padding-top: 5px;padding-bottom: 5px;padding-right: 7px;"><a href="nuestra_clinica.html">Nuestra Clinica</a></li>
+            <li style="padding-top: 5px;padding-bottom: 5px;"><a href="instalaciones.html">Instalaciones</a></li>
+            
+           
+
+
+          
+          </ul>
+        </li>
+        <li><a style="font-size: 14px;"  href="especialidades.html"><span class="icon-aid-kit"></span> Especialidades</a></li>
+       
+        
+        <!--<li><a style="font-size: 14px;"  href="nuestro_equipo.html"><span class="icon-user-tie"></span> Nuestro Equipo</a></li>-->
+        <li><a style="font-size: 14px;"  href="contacto.html"><span class="icon-user"></span> Contacto </span></a></li>
+        <li><a style="font-size: 14px;"  href="cita_en_linea.html"><span class="icon-calendar"></span> Cita en Linea</a></li>
+
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="social">
+		<ul>
+			<li><a href="https://www.facebook.com/POINTIMPLANTCLINIC/" target="_blank" class="icon-facebook2"></a></li>
+			<li><a href="https://www.instagram.com/pointimplant19/" target="_blank" class="icon-instagram"></a></li>
+			<li><a href="https://api.whatsapp.com/send?phone=51977833134" target="_blank" class="icon-whatsapp"></a></li>
+		</ul>
+</div>
+
+<!--Main-->
+
+<!-- Main icono en input--> 
+<style type="text/css">
+input[type="text"] {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #BBBBBB;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon input[type="text"] {
+  padding-left: 40px;
+  color: white;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+/*@media (max-width: 768px) {
+.inputWithIcon input[type="text"] {
+      height: 2.6em;
+      position: relative;
+      padding-left: 50px;
+      font-size: 16px;
+}
+.inputWithIcon i{
+      position: relative;
+      font-size: 22px;
+}
+}*/
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  padding: 10.5px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 10.5px 10px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+
+</style>
+
+  <div id="form" class="container" style="padding-top: 10px;">
+
+    <div id="tituloesp"><h1>Solicita Una Cita</h1></div>
+
+  <div id="linfor">
+      <div style="padding-top:0px;padding-bottom: 2px;background-color: #02B8BF"  class="col-xs-4 col-xs-12"></div>
+      <div style="padding-top:0px;padding-bottom: 2px;background-color: #158ED8"  class="col-xs-4 col-xs-12"></div> 
+      <div style="padding-top:0px;padding-bottom: 2px;background-color: #0CC07F"  class="col-xs-4 col-xs-12"></div> 
+  </div>
+
+  <div class="row" style="padding-top: 20px;">
+
+<div>
+      <form method="POST"   action="contactenos.php" name="frm1" >
+        <div class="inputWithIcon inputIconBg">
+          <input type="text" class="form-control" name= "visitor_name" id="nombre" placeholder="Nombres y Apellidos" required>
+          <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <input type="text" class="form-control" name="visitor_email" id="correo" placeholder="E-mail" required>
+          <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <input type="text" class="form-control" name="visitor_cel" id="celular" placeholder="Celular" required maxlength="9" title="Solo se permiten numeros">
+          <i class="glyphicon glyphicon-phone" aria-hidden="true"></i>
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <input type="text" class="form-control" name="visitor_dir" id="direccion" placeholder="Ingrese Dirección" required>
+          <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
+        </div>
+
+         <div class="inputWithIcon inputIconBg">
+          <label style="color: #eee;">Seleccione una especialidad:</label>
+          <select class="form-control" name="especialidades" id="especialidades">
+             <option value="">Seleccione una especialidad...</option>
+          <option value="Odontologia General">Odontologia General</option>
+          <option value="Odontopediatria">Odontopediatria</option>
+          <option value="Ortodoncia">Ortodoncia</option>
+          <option value="Estetica Dental">Estetica Dental</option>
+          <option value="Cirujia Bucal">Cirujia Bucal</option>
+          <option value="Implantes Dentales">Implantes Dentales</option>
+          <option value="Endodoncia">Endodoncia</option>
+          <option value="Blanqueamiento Dental">Blanqueamiento Dental</option>
+          <option value="Reabilitacion Oral">Reabilitacion Oral</option>
+          <option value="Radiología">Radiología</option>
+          </select>
+        </div>
+      <div class="col-md-6 col-md12">
+      <div class="inputWithIcon inputIconBg">
+          <input type="text" class="form-control" name="date" id="datepicker" placeholder="Fecha" required/>
+          <i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>
+    </span>
+      </div>
+      </div>
+        <div class="col-md-6 col-md-12">
+        <div class="inputWithIcon inputIconBg ">
+          <input type="text" class="timepicker" name="time" id="timepicker" placeholder="Hora" required>
+          <i class="icon-clock 1" aria-hidden="true"></i>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label style="color: #eee;" >Comentario:</label>
+          <textarea class="form-control" rows="3" name="visitor_message" id="comentario" placeholder="Ingrese Comentarios"></textarea>
+        </div>
+
+        
+        <div>
+          <input type="checkbox" id="check" checked>
+          <label style="color: #eee;">Recibir Información y Novedades</label>
+        </div>
+
+        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
+        <button type="submit" value="enviar" id="button" name="button" class="btn btn-default">Enviar</button>
+      </form>
+  </div>
+
+  </div>
+</div>
+
+<p>
+
+
+
+
+<!--FOOTER-->
+    
+
+    <footer id="footer">
+
+      <div class="inner">
+          <ul class="actions">
+            <li><span class="icon fa-phone"></span> <a href="#">+51 (01) 6870870</a></li>
+            <li><span class="icon fa-envelope"></span> <a href="#">info@digident.com.pe</a></li>
+            <li><span class="icon fa-map-marker"></span>  Av. Club Golf los Incas 206, Santiago de Surco 15023</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          Copyright © 2019 - Todos Los Derechos estan Reservados || Power by Point Implant Clinic
+        </div>
+    </footer>
+
+<!--FIN -->
+
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://cdjns.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.js"></script> 
+   <script src="datepicker3/build/jquery.datetimepicker.full.min.js"/></script> 
+
+   <script>
+     $('#datepicker').datetimepicker({
+          timepicker: false,
+          datepicker: true,
+          format: 'd-m-Y'    
+      })
+
+
+     $('#timepicker').datetimepicker({
+          timepicker: true,
+          datepicker: false,
+          format: 'H:i',
+          //value: '9:45',
+          hours12: false,
+          allowTimes:['9:00','9:15','9:30','9:45','10:00','10:15','10:30','10:45','11:00','11:15','11:30','11:45','12:00','12:15','12:30','13:00','13:15','13:30','13:45','14:00','14:15','14:30','14:45','15:00','15:15','15:30','15:45','16:00','16:15','16:30','16:45','17:15','17:30','17:45','18:00','18:15','18:30','18:45','19:00','19:15','19:30','19:45','20:00']       
+      })
+
+   </script>
+
+</body>
+</html>
